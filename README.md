@@ -4,8 +4,12 @@ I built this Matryoshka-style Grid-based Inventory System using C# in Unity. It 
 ## Features 🧩
 - A **matryoshka-style** system allows an inventory to be stacked inside of another inventory. 🎒
 
+(ex. a backpack inside of a backpack inside of a backpack) 
+
 
 - A **grid-based** system allows different sized items to take up multiple slots. 📦
+
+(ex. Diablo, Escape From Tarkov, System Shock 2) 
 
 
 - Items labeled as weapons can be **equipped** using the **primary** or **secondary slot**. 🗡️
