@@ -1,7 +1,7 @@
 # Matryoshka-style Grid-based Inventory and FPS Controller
 I built this Matryoshka-style Grid-based Inventory System using C# in Unity. It also includes a basic FPS controller with IK and a procedural recoil system for animation.
 
-## Features 🛠
+## Features 🧩
 - A **matryoshka-style** system allows an inventory to be stacked inside of another inventory. 🎒
 
 
@@ -16,7 +16,7 @@ I built this Matryoshka-style Grid-based Inventory System using C# in Unity. It 
 
 - A **procedural recoil system** determines patterns for the weapon firing animations. 🔫
 
-## Controls 🎮
+## Controls 🖱️
 | Key           | Action          |
 | ------------- |:-------------:|
 | F             | Add world objects to inventory. |
