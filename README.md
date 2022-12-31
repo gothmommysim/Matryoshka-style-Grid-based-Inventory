@@ -13,12 +13,15 @@ I built this Matryoshka-style Grid-based Inventory System using C# in Unity. It 
 
 (ex. Diablo, Escape From Tarkov, System Shock 2) 
 
+![Grid](https://media.githubusercontent.com/media/gothmommysim/Matryoshka-style-Grid-based-Inventory/main/githubimages/inventorygrid.png)
 
 - Items labeled as weapons can be **equipped** using the **primary** or **secondary slot**. 🗡️
 
+![Equip Slots](https://media.githubusercontent.com/media/gothmommysim/Matryoshka-style-Grid-based-Inventory/main/githubimages/inventoryequipslots.png)
 
 - A **context menu** provides the user with quick actions such as quickly moving an item to an equip slot with `Equip` or dropping it with `Drop`. 📑
 
+![Context Menu](https://media.githubusercontent.com/media/gothmommysim/Matryoshka-style-Grid-based-Inventory/main/githubimages/inventorycontextmenu.png)
 
 - A **procedural recoil system** determines patterns for the weapon firing animations. 🔫
 
