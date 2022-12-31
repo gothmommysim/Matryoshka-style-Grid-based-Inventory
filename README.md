@@ -2,11 +2,19 @@
 I built this Matryoshka-style Grid-based Inventory System using C# in Unity. It also includes a basic FPS controller with IK and a procedural recoil system for animation.
 
 ## Features 🛠
-- A **matryoshka-style** system allows an inventory to be stacked inside of another inventory. 🎒
-- A **grid-based** system allows different sized items to take up multiple slots. 📦
-- Items labeled as weapons can be **equipped** using the **primary** or **secondary slot**. 🗡️
-- A **context menu** provides the user with quick actions such as quickly moving an item to an equip slot with `Equip` or dropping it with `Drop`. 💬
-- A **procedural recoil system** determines patterns for the weapon firing animations. 🔫
+ A **matryoshka-style** system allows an inventory to be stacked inside of another inventory. 🎒
+
+
+ A **grid-based** system allows different sized items to take up multiple slots. 📦
+
+
+ Items labeled as weapons can be **equipped** using the **primary** or **secondary slot**. 🗡️
+
+
+ A **context menu** provides the user with quick actions such as quickly moving an item to an equip slot with `Equip` or dropping it with `Drop`. 📑
+
+
+ A **procedural recoil system** determines patterns for the weapon firing animations. 🔫
 
 ## Controls 🎮
 | Key           | Action          |
