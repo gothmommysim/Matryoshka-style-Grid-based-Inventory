@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Fanny Pack
   itemDesc: Big enough to hold a stick and then some.
-  itemThumbnail: {fileID: 2800000, guid: 82bae4f35d453a44c81627eb925bb1ca, type: 3}
+  itemThumbnail: {fileID: 21300000, guid: 82bae4f35d453a44c81627eb925bb1ca, type: 3}
   itemWidth: 2
   itemHeight: 1
   itemRotation: 0
@@ -22,10 +22,11 @@ MonoBehaviour:
   baseObj: {fileID: 0}
   instancedObj: {fileID: 0}
   currentStorage: {fileID: 0}
-  currentSlot: {fileID: 0}
-  lastSlot: {fileID: 0}
-  storageSlotX: 0
-  storageSlotY: 0
+  slotX: 0
+  slotY: 0
+  previousStorage: {fileID: 0}
+  prevSlotX: 0
+  prevSlotY: 0
   storageWidth: 3
   storageHeight: 1
   storageType: 0

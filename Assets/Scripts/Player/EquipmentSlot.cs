@@ -21,6 +21,7 @@ public class EquipmentSlot : UISlot
 
     Item savedItem;
 
+    [SerializeField]
     RawImage activeSlotImage;
 
     private void Awake()

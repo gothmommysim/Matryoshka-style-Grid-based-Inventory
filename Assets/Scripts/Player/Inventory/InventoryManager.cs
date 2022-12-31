@@ -58,6 +58,7 @@ public class InventoryManager : MonoBehaviour
         inventoryUI.GetComponent<CanvasGroup>().alpha = 0f;
         inventoryEnabled = false;
     }
+
     public bool CheckSlotFit(int slotX, int slotY, Storage storage, Item item, UISlot endSlot = null)
     {   //Returns true if item fits in slot
         if (!storage.storageSlots[slotX, slotY].slotFilled)
@@ -169,6 +170,28 @@ public class InventoryManager : MonoBehaviour
         item.currentStorage = storage;
         item.slotX = slotX;
         item.slotY = slotY;
+
+        //Match size
+        if (item.inventoryItem!=null && item.currentStorage.storageType == Storage.StorageTypes.storeStorage)
+        {
+            Vector2 itemSize = item.inventoryItem.GetComponent<RectTransform>().sizeDelta;
+            Vector2 parentSize = item.inventoryItem.transform.parent.GetComponent<RectTransform>().sizeDelta;
+            float ratio = 1f;
+            if (itemSize.x > itemSize.y && !(parentSize.x < 1))
+            {
+                ratio = Mathf.Round(itemSize.x / parentSize.x);
+                Debug.Log("item:"+itemSize.x +" parent:"+ parentSize.x +" ratio:"+ ratio);
+            }
+            else if(!(parentSize.y < 1))
+            {
+                ratio = Mathf.Round(itemSize.y / parentSize.y);
+                Debug.Log("item:" + itemSize.x + " parent:" + parentSize.x + " ratio:" + ratio);
+                Debug.Log(ratio);
+            }
+
+            item.inventoryItem.GetComponent<RectTransform>().sizeDelta = itemSize/ratio;
+            Debug.Log(itemSize);
+        }
 
         if (item.currentStorage.storageType == Storage.StorageTypes.itemStorage)
         {
@@ -350,7 +373,7 @@ public class InventoryManager : MonoBehaviour
         {
             var tempItem = Instantiate(uiItem, uiParent);
             tempItem.item = item;
-            tempItem.GetComponent<RawImage>().texture = tempItem.item.itemThumbnail;
+            tempItem.GetComponent<Image>().sprite = tempItem.item.itemThumbnail;
             item.inventoryItem = tempItem;
             return tempItem;
         }

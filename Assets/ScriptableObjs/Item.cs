@@ -7,7 +7,7 @@ public class Item : ScriptableObject
 {
     public string itemName = "";
     public string itemDesc = "";
-    public Texture2D itemThumbnail;
+    public Sprite itemThumbnail;
     public int itemWidth;
     public int itemHeight;
     public float itemRotation;
